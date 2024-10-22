@@ -1,0 +1,91 @@
+#timerPageContainer{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+#timerContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#inputContainer{
+    display: flex;
+    align-items: center;
+}
+
+.numberInput,
+.numberCounter {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    width: 120px; /* Ensure consistent width */
+    font-size: 100px;
+    text-align: center;
+    background-color: #7373ff;
+    color: black; /* Ensure text color matches */
+    font-weight: bold; /* Ensure font weight matches */
+}
+.numberInput:focus{
+    border: none;
+    outline: none;
+}
+
+.numberInput::-webkit-inner-spin-button,
+.numberInput::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+.colon{
+    font-size: 5em;
+}
+
+.pomButton{
+    background-color: black;
+    color: white;
+    outline: none;
+    border: none;
+    padding: 20px;
+    text-align: center;
+    width: 150px;
+    font-size: 25px;
+    margin-top: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+
+.pomButton::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px; /* Thickness of the bottom highlight */
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly different color */
+}
+
+/*       Countdown CSS       */
+#countdownContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#countNumbers{
+    display: flex;
+    gap: 10px;
+}
+.numberCounter{
+    border: 0px solid;
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+    font-size: 100px;
+    text-align: center;
+    background-color: #7373ff;
+}

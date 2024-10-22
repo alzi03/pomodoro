@@ -2,10 +2,13 @@ import React from "react";
 import { useState } from "react";
 
 import Timer from "./Timer";
+import './Timer.css'
 
 const TimerPage: React.FC = () => {
     return(
-        <div></div>
+        <div id="timerPageContainer">
+            <Timer />
+        </div>
     )
 
 }

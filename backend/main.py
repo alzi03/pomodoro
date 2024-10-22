@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Query
 from fastapi.middleware.cors import CORSMiddleware
 
 from pydantic import BaseModel
@@ -9,6 +9,12 @@ from database.utils import *
 from database.models import *
 
 app = FastAPI()
+
+
+@app.post("/api/save_new_cycle")
+async def save_new_cycle(time = Query(...), description = Query(...)):
+    return
+
 
 app.add_middleware(
     CORSMiddleware,
